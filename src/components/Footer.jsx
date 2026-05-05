@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
 
             {/* Credit Section */}
-            <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:bg-gray-100 transition-all duration-300 ml-4">
+            {/* <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:bg-gray-100 transition-all duration-300 ml-4">
               <a
                 href="https://fabulousmedia.in"
                 target="_blank"
@@ -127,7 +127,7 @@ const Footer = () => {
                   height="12"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

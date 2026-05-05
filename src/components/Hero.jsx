@@ -351,7 +351,7 @@ const Hero = () => {
         >
           <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
             <img
-              src="/heero.jpeg"
+              src="/heeero.jpeg"
               alt="Happy Indian Family"
               className="w-full h-full object-cover rounded-3xl"
             />
