@@ -1,23 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MousePointerClick, Hospital, Banknote, ArrowRight, ArrowDown } from 'lucide-react';
+import { MousePointerClick, Hospital, Banknote, ArrowRight, ArrowDown, UserPlus, Stethoscope, IndianRupee } from 'lucide-react';
 
 const HowItWorks = () => {
   const steps = [
     {
-      icon: <img src="/noagelimit.png" alt="Membership" className="w-16 h-16 object-contain" />,
+      icon: <UserPlus className="w-10 h-10 text-primary" />,
       title: "Get Oxxy Membership",
-      desc: "Activate your cancer support plan instantly. No medical tests required for enrollment."
+      desc: "Get Your support plan. No medical tests required for enrollment."
     },
     {
-      icon: <img src="/freecounsellor.png" alt="Counsellor" className="w-16 h-16 object-contain" />,
+      icon: <Stethoscope className="w-10 h-10 text-primary" />,
       title: "Consult Oncologists",
-      desc: "Visit any of our 1000+ partner oncology centers and specialized cancer hospitals."
+      desc: "Visit oncology centers and specialized cancer hospitals."
     },
     {
-      icon: <img src="/discounted.png" alt="Savings" className="w-16 h-16 object-contain" />,
+      icon: <IndianRupee className="w-10 h-10 text-primary" />,
       title: "Save on Treatments",
-      desc: " Get up to 40% instant discount on chemo, scans, and surgery."
+      desc: " Get up to 40% instant discount on Chemo, Radio, Scan, Surgery & Medicine."
     }
   ];
 
@@ -49,7 +49,7 @@ const HowItWorks = () => {
               <h3 className="text-2xl font-bold text-secondary mb-4">{step.title}</h3>
               <p className="text-gray-600 leading-relaxed max-w-xs mx-auto">{step.desc}</p>
             </motion.div>
-            
+
             {/* Arrow logic */}
             {index < steps.length - 1 && (
               <>

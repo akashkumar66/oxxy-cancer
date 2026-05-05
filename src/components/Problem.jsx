@@ -1,21 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertCircle, TrendingUp, Wallet } from 'lucide-react';
+import { AlertCircle, TrendingUp, Wallet, Stethoscope, Clock, TrendingDown } from 'lucide-react';
 
 const Problem = () => {
   const painPoints = [
     {
-      icon: <img src="/discounted.png" alt="Discounted" className="w-16 h-16 object-contain" />,
-      title: "Expensive Oncology",
+      icon: <Stethoscope className="w-12 h-12 text-red-500" />,
+      title: "Expensive Radiology",
       description: "Cancer treatments like Chemotherapy and Radiation can cost lakhs per session, often exceeding insurance limits."
     },
     {
-      icon: <img src="/effectiveage.png" alt="Effective" className="w-16 h-16 object-contain" />,
+      icon: <Clock className="w-12 h-12 text-red-500" />,
       title: "Wait & Exclusion",
       description: "Most policies have a 2-4 year waiting period for cancer, leaving patients vulnerable when they need help now."
     },
     {
-      icon: <img src="/nlonmedical.png" alt="No Limit" className="w-16 h-16 object-contain" />,
+      icon: <TrendingDown className="w-12 h-12 text-red-500" />,
       title: "Savings Wipeout",
       description: "A full cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
     }

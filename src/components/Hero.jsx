@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, ArrowRight, Activity, ShieldPlus, Users, X, Mail } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Activity, ShieldPlus, Users, X, Mail, ShieldCheck, TrendingUp, Layers, Banknote, Stethoscope, Handshake } from 'lucide-react';
 
 const Hero = () => {
   const [activePopup, setActivePopup] = useState(null);
 
   const popups = {
     complete: "Get comprehensive support for all cancer treatments, including medical, emotional, and financial guidance throughout your journey.",
-    stage: "Whether early detection or advanced stages, our plans are designed to provide maximum benefits regardless of your current condition.",
+    stage: "Whether early detection or advanced stages, our  are designed to provide maximum benefits regardless of your current condition.",
     covered: "From common to rare types, our coverage extends across all known cancer variations for complete peace of mind.",
     moneyback: "We offer a money-back guarantee to ensure your complete satisfaction and peace of mind.",
     treatments: "Full coverage for chemotherapy, radiation therapy, complex surgeries, and post-operative care."
@@ -81,20 +81,22 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className=" text-xl text-gray-600 mb-14 leading-relaxed">
+          {/* <p className=" text-xl text-gray-600 mb-14 leading-relaxed">
 
-          </p>
+          </p> */}
 
           <div className="relative mb-4 w-full">
             <button
               onClick={() => handlePopup('complete')}
-              className="w-full px-6 py-3 rounded-2xl text-lg flex items-center justify-between bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+              className="w-full px-6 py-3 rounded-2xl text-lg flex items-center justify-between bg-primary/10 hover:bg-primary/20 text-secondary transition-all group"
             >
               <div className="flex items-center space-x-3">
-                <img src="/handshake1.jpg" alt="" className='w-7 h-7 rounded-sm object-cover' />
+                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+                  <Handshake size={24} />
+                </div>
                 <span className="font-semibold">Complete Cancer Support</span>
               </div>
-              <ArrowRight size={20} />
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <AnimatePresence>
               {activePopup === 'complete' && (
@@ -112,7 +114,7 @@ const Hero = () => {
                   </button>
                   <div className="flex flex-col items-center text-center mt-2">
                     <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                      <Mail size={24} />
+                      <Handshake size={24} />
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.complete}</p>
                     <button
@@ -122,7 +124,7 @@ const Hero = () => {
                       }}
                       className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
                     >
-                      Plans
+                      Plan
                     </button>
                   </div>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 border-[10px] border-transparent border-t-white drop-shadow-sm"></div>
@@ -138,10 +140,12 @@ const Hero = () => {
                 className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <img src="/effective.png" alt="" className='w-6 h-6 shrink-0' />
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+                    <TrendingUp size={18} />
+                  </div>
                   <span className="font-medium leading-tight">Effective At Any Stage</span>
                 </div>
-                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
               <AnimatePresence>
                 {activePopup === 'stage' && (
@@ -159,7 +163,7 @@ const Hero = () => {
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
                       <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Mail size={20} />
+                        <TrendingUp size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.stage}</p>
                       <button
@@ -169,7 +173,7 @@ const Hero = () => {
                         }}
                         className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
                       >
-                        Plans
+                        Plan
                       </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
@@ -184,10 +188,12 @@ const Hero = () => {
                 className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <img src="/todo1.png" alt="" className='w-6 h-6 shrink-0' />
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+                    <Layers size={18} />
+                  </div>
                   <span className="font-medium leading-tight">All cancer covered</span>
                 </div>
-                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
               <AnimatePresence>
                 {activePopup === 'covered' && (
@@ -205,7 +211,7 @@ const Hero = () => {
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
                       <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Mail size={20} />
+                        <Layers size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.covered}</p>
                       <button
@@ -215,7 +221,7 @@ const Hero = () => {
                         }}
                         className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
                       >
-                        Plans
+                        Plan
                       </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
@@ -230,10 +236,12 @@ const Hero = () => {
                 className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <img src="/moneyback.png" alt="" className='w-6 h-6 shrink-0' />
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+                    <Banknote size={18} />
+                  </div>
                   <span className="font-medium leading-tight">Money Back Guarantee</span>
                 </div>
-                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
               <AnimatePresence>
                 {activePopup === 'moneyback' && (
@@ -251,7 +259,7 @@ const Hero = () => {
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
                       <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Mail size={20} />
+                        <Banknote size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.moneyback}</p>
                       <button
@@ -261,7 +269,7 @@ const Hero = () => {
                         }}
                         className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
                       >
-                        Plans
+                        Plan
                       </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
@@ -276,10 +284,12 @@ const Hero = () => {
                 className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <img src="/work.png" alt="" className='w-6 h-6 shrink-0' />
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+                    <Stethoscope size={18} />
+                  </div>
                   <span className="font-medium leading-tight">Works on Chemo, Radiation and Surgeries</span>
                 </div>
-                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
               <AnimatePresence>
                 {activePopup === 'treatments' && (
@@ -297,7 +307,7 @@ const Hero = () => {
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
                       <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Mail size={20} />
+                        <Stethoscope size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.treatments}</p>
                       <button
@@ -307,7 +317,7 @@ const Hero = () => {
                         }}
                         className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
                       >
-                        Plans
+                        Plan
                       </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
@@ -341,7 +351,7 @@ const Hero = () => {
         >
           <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
             <img
-              src="/reseptionist.avif"
+              src="/deskM.png"
               alt="Happy Indian Family"
               className="w-full h-full object-cover rounded-3xl"
             />

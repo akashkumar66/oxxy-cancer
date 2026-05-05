@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Offers from './components/Offers';
+import AvailsAt from './components/AvailsAt';
 import Problem from './components/Problem';
 import FeaturesGrid from './components/FeaturesGrid';
 import CancerAwareness from './components/CancerAwareness';
 import Solution from './components/Solution';
 import HowItWorks from './components/HowItWorks';
 import Benefits from './components/Benefits';
+import OxxySize from './components/OxxySize';
 import Pricing from './components/Pricing';
+import About from './components/About';
 import SocialProof from './components/SocialProof';
 import Urgency from './components/Urgency';
 import LeadCapture from './components/LeadCapture';
@@ -39,15 +42,18 @@ function App() {
         <Hero />
         <Offers />
         <Problem />
-        <FeaturesGrid />
+        {/* <FeaturesGrid /> */}
         <CancerAwareness />
         <Solution />
         <Benefits />
+        <OxxySize />
+        <AvailsAt />
         <HowItWorks />
         <Pricing />
+        <About />
         <SocialProof />
         <Urgency />
-        <FAQ />
+        {/* <FAQ /> */}
         <LeadCapture />
       </main>
       <Footer />

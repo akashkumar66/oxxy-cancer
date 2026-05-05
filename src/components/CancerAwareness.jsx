@@ -28,8 +28,8 @@ const CancerAwareness = () => {
 
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="flex items-start space-x-4">
-                <div className=" p-1 rounded-full">
-                  <img src="/noagelimit.png" alt="No Age Limit" className="w-24 h-24 object-contain" />
+                <div className="p-3 bg-red-50 rounded-2xl text-red-500">
+                  <Users size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">1 in 9 Indians</h4>
@@ -37,8 +37,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="p-1 rounded-2xl">
-                  <img src="/allcancer.png" alt="All Cancer" className="w-24 h-24 object-contain" />
+                <div className="p-3 bg-red-50 rounded-2xl text-red-500">
+                  <TrendingUp size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">14.6 Lakh Cases</h4>
@@ -46,8 +46,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className=" p-1 rounded-2xl">
-                  <img src="/nlonmedical.png" alt="No Limit" className="w-24 h-24 object-contain" />
+                <div className="p-3 bg-red-50 rounded-2xl text-red-500">
+                  <IndianRupee size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">₹5-15 Lakhs</h4>
@@ -55,8 +55,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="p-1 rounded-2xl">
-                  <img src="/discounted.png" alt="Discounted" className="w-24 h-24 object-contain" />
+                <div className="p-3 bg-red-50 rounded-2xl text-red-500">
+                  <Heart size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">50-60% Savings</h4>
@@ -76,14 +76,14 @@ const CancerAwareness = () => {
           >
             <div className="relative rounded-[3rem] overflow-hidden shadow-premium group">
               <img
-                src="/cancerrate.webp"
+                src="/rate2.png"
                 alt="Oncology Care"
-                className="w-full h-[500px] object-cover pl-12 md:object-fit transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-[450px] object-cover   md:object-fit transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-10">
+              <div className="absolute inset-0  top-32  to-transparent flex items-start p-4">
                 <div className="text-white">
-                  <p className="text-white font-bold mb-2 uppercase tracking-widest">Advanced Oncology</p>
-                  <h4 className="text-2xl font-bold">Bridging the Gap in Cancer Care Accessibility</h4>
+                  <p className="text-primary font-bold mb-4 uppercase tracking-widest">Advanced Oncology</p>
+                  <h4 className="text-2xl text-black font-bold">Bridging the Gap in Cancer<br /> Care Accessibility</h4>
                 </div>
               </div>
             </div>

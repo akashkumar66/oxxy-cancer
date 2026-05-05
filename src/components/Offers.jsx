@@ -5,12 +5,12 @@ import {
   TrendingUp,
   Umbrella,
   Target,
-  Ambulance,
   Home,
   Headphones,
   BadgePercent,
   Cloud,
-  Truck
+  Truck,
+  Car // ✅ changed here
 } from 'lucide-react';
 
 const offers = [
@@ -18,7 +18,7 @@ const offers = [
   { id: 2, title: 'No Age Limit to Purchase', icon: TrendingUp, color: 'text-blue-500', links: "/noagelimit.png" },
   { id: 3, title: 'No Limit on Medical Expenditure', icon: Umbrella, color: 'text-yellow-500', links: "/nlonmedical.png" },
   { id: 4, title: 'Effective at any Stage', icon: Target, color: 'text-teal-500', links: "/effectiveage.png" },
-  { id: 5, title: 'Free Ambulance Service', icon: Ambulance, color: 'text-red-500', links: "/freeservice.png" },
+  { id: 5, title: 'Free Medical delivery Service', icon: Car, color: 'text-red-500', links: "/freepickup.png" }, // ✅ updated icon
   { id: 6, title: 'Health Care at Home', icon: Home, color: 'text-orange-500', links: "/careathome.png" },
   { id: 7, title: 'Free Health Counsellor', icon: Headphones, color: 'text-indigo-500', links: "/freecounsellor.png" },
   { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500', links: "/discounted.png" },
@@ -82,10 +82,10 @@ const Offers = () => {
               <motion.div
                 key={offer.id}
                 variants={itemVariants}
-                className="bg-white hover:bg-primary/20 hover:[#icn]-translate-y-4 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+                className="bg-white hover:bg-primary/20 hover:scale-105 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 group"
               >
-                <div id='icn' className="transition-all duration-200 mb-4 p-4 bg-white overflow-hidden  rounded-full">
-                  <img src={offer.links} alt="img" className='hover:scale-125 w-24 h-18' />
+                <div className="mb-4 p-4 bg-primary/10 rounded-full group-hover:bg-white transition-colors duration-300">
+                  <Icon className={`w-8 h-8 ${offer.color}`} />
                 </div>
                 <h3 className="text-sm font-semibold text-[#1A4B46] leading-tight">
                   {offer.title}

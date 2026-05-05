@@ -39,20 +39,20 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#plans"
+            href="#contact"
             className="btn-gradient px-6 py-2.5 rounded-full shadow-premium"
           >
-            Check Plans
+            Get Plan
           </a>
         </div>
 
         {/* Mobile View Button */}
         <div className="md:hidden">
           <a
-            href="#plans"
+            href="#contact"
             className="btn-gradient px-4 py-2 rounded-full text-sm font-bold shadow-premium"
           >
-            Get Plans
+            Get Plan
           </a>
         </div>
       </div>

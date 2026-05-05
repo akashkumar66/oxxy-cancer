@@ -5,21 +5,21 @@ import { Star, Quote } from 'lucide-react';
 const SocialProof = () => {
   const testimonials = [
     {
-      name: "Meera Iyer",
-      role: "Breast Cancer Survivor",
-      content: "My treatment involved 12 cycles of chemo. Oxxy saved us over ₹3 Lakhs. But more than money, their priority booking at Tata Memorial was a blessing.",
+      name: "Amaya Lal 38",
+      role: "New Delhi, Delhi",
+      content: "I used to smoke in the company of my friends. I never thought that it will lead to cancer. But when I was diagnosed with cancer, I was shocked. I didn't know what to do. But then I found out about Oxxy and thank god oxxy was there to take care of me completly.",
       image: "women1.png"
     },
     {
-      name: "Suresh Prabhu",
-      role: "Lung Cancer Patient",
-      content: "Insurance rejected my claim because I was a former smoker. Oxxy didn't ask any questions. They covered my radiation from day one.",
+      name: "Arif Mohammad 57",
+      role: "Hyderabad , Telangana",
+      content: "I am an insurance broker. Couldn't imagine that someone can offer a cancer health plan after cancer predected. It will be a big support for all my clients who are run insured / under insured to save money.",
       image: "men.png"
     },
     {
-      name: "Dr. Anjali Gupta",
-      role: "Oncologist",
-      content: "I recommend Oxxy to my patients who are struggling with treatment costs. It's the only platform that truly covers pre-existing cancers immediately.",
+      name: "Zubaida Begum 52",
+      role: "Noida, Uttar Pradesh",
+      content: "My mom had cancer stage 4. Nobody was willing to support. Oxxy was big help saved alot of money at the time when needed. Works on medicines too. Thank god my mom is out of danger noew. Oxxy played a big role to save my mom.",
       image: "women2.png"
     }
   ];

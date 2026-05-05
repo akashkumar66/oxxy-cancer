@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Truck, Pill, Infinity, Sparkles } from 'lucide-react';
+import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lucide-react';
 
 const Solution = () => {
   const highlights = [
-    { icon: <img src="/discounted.png" alt="Discounted" className="w-24 h-24 object-contain" />, title: "Instant Oncology Off", desc: "Up to 40% off on Chemo & Radiation" },
-    { icon: <img src="/freeservice.png" alt="Ambulance" className="w-24 h-24 object-contain" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
-    { icon: <img src="/freepickup.png" alt="Pickup" className="w-24 h-24 object-contain" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
-    { icon: <img src="/nlonmedical.png" alt="No Limit" className="w-24 h-24 object-contain" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Off", desc: "Up to 40% off on Chemo & Radiation" },
+    // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
+    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
+    { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
   ];
 
   return (
@@ -28,7 +28,7 @@ const Solution = () => {
           <div className="grid grid-cols-2 gap-6">
             {highlights.map((item, index) => (
               <div key={index} className="flex flex-col space-y-2 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                <div className=" w-24 h-24 rounded-lg flex items-center justify-center mb-2">
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {item.icon}
                 </div>
                 <h4 className="font-bold text-secondary">{item.title}</h4>
@@ -59,7 +59,7 @@ const Solution = () => {
                   <div key={i} className="flex justify-between items-center">
                     <div>
                       <p className="font-semibold text-secondary">{row.label}</p>
-                      <p className="text-xs text-gray-500">Original: {row.amount}</p>
+                      <p className="text-sm size-md font-bold text-gray-700 line-through">Original: {row.amount}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-accent">-{row.discount}</p>

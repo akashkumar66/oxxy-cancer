@@ -91,7 +91,7 @@ const Footer = () => {
               <p className="text-gray-400 text-sm">© 2025 Oxxy Healthcare. All Rights Reserved.</p>
               <p className="text-xs text-gray-400 mt-1 italic">Oxxy is not an INSURANCE. Oxxy sells Discounted Health Plans.</p>
             </div>
-            
+
             {/* Credit Section */}
             <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:bg-gray-100 transition-all duration-300 ml-0 md:ml-8 mt-4 md:mt-0">
               <a
