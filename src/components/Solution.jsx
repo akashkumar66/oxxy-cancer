@@ -4,7 +4,7 @@ import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lu
 
 const Solution = () => {
   const highlights = [
-    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Off", desc: "Up to 40% off on Chemo & Radiation" },
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Savings", desc: "Up to 40% off on Chemo & Radiology" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
     { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
     { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
@@ -59,7 +59,7 @@ const Solution = () => {
                   <div key={i} className="flex justify-between items-center">
                     <div>
                       <p className="font-semibold text-secondary">{row.label}</p>
-                      <p className="text-sm size-md font-bold text-gray-700 line-through">Original: {row.amount}</p>
+                      <p className="text-md font-bold text-black line-through">Original: {row.amount}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-accent">-{row.discount}</p>

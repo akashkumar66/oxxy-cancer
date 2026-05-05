@@ -351,12 +351,12 @@ const Hero = () => {
         >
           <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
             <img
-              src="/deskM.png"
+              src="/heero.jpeg"
               alt="Happy Indian Family"
               className="w-full h-full object-cover rounded-3xl"
             />
             {/* Float Cards */}
-            <div className="absolute top-2 -left-6 bg-white p-4 rounded-2xl shadow-premium animate-float">
+            <div className="absolute -top-8 -left-6 bg-white p-4 rounded-2xl shadow-premium animate-float">
               <div className="flex items-center space-x-3">
                 <div className="bg-accent/10 p-2 rounded-lg">
                   <ShieldPlus className="text-accent" size={24} />

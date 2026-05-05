@@ -82,7 +82,7 @@ const CancerAwareness = () => {
               />
               <div className="absolute inset-0  top-32  to-transparent flex items-start p-4">
                 <div className="text-white">
-                  <p className="text-primary font-bold mb-4 uppercase tracking-widest">Advanced Oncology</p>
+                  <p className="text-primary font-bold mb-4 uppercase tracking-widest">Advanced Radiology</p>
                   <h4 className="text-2xl text-black font-bold">Bridging the Gap in Cancer<br /> Care Accessibility</h4>
                 </div>
               </div>

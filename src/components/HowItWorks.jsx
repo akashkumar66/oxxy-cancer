@@ -11,13 +11,13 @@ const HowItWorks = () => {
     },
     {
       icon: <Stethoscope className="w-10 h-10 text-primary" />,
-      title: "Consult Oncologists",
-      desc: "Visit oncology centers and specialized cancer hospitals."
+      title: "Consult Radiologists",
+      desc: "Visit Radiology centers and specialized cancer hospitals."
     },
     {
       icon: <IndianRupee className="w-10 h-10 text-primary" />,
       title: "Save on Treatments",
-      desc: " Get up to 40% instant discount on Chemo, Radio, Scan, Surgery & Medicine."
+      desc: " Get up to 40% instant discount on Chemo, Radiology, Scan, Surgery & Medicine."
     }
   ];
 

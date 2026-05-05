@@ -7,7 +7,7 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer treatments like Chemotherapy and Radiation can cost lakhs per session, often exceeding insurance limits."
+      description: "Cancer treatments like Chemotherapy and Radiology can cost lakhs per session, often exceeding insurance limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,

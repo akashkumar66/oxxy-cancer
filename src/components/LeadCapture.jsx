@@ -26,7 +26,7 @@ const LeadCapture = () => {
 
             <ul className="space-y-4">
               {[
-                "Works on Chemo, Radiation & Surgery",
+                "Works on Chemo, Radiology & Surgery",
                 "No medical tests or waiting periods",
                 "Valid for all pre-existing cancers"
               ].map((text, i) => (
